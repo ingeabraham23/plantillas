@@ -33,7 +33,7 @@
   .encabezado {
     font-family: "ARCO Typography";
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    color: #a200ff;
+    color: #000000;
     text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
     font-size: 24px;
     padding: 20px;
@@ -47,7 +47,7 @@
     color: #a6ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -60,7 +60,7 @@
     color: #00aeff;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px #00aeff; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -73,7 +73,7 @@
     color: #ffd000;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px #ffd000; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -86,7 +86,7 @@
     color: #fffb00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -99,7 +99,7 @@
     color: #ff0000;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -112,7 +112,7 @@
     color: #fffb00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 24px;
+    font-size: 20px;
     text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -132,6 +132,10 @@
     margin-bottom: 5px;
     margin-right: 5px;
     font-size: 20px;
+  }
+
+  .tips{
+    font-size: 10px;
   }
 
 }

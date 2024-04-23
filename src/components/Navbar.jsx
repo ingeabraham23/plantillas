@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import {
-    faMoneyBillTransfer,
+    faCircleDollarToSlot,
+    faCross,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const navigationItems = [
-  { path: '/', icon: faMoneyBillTransfer, label: 'recaudacion' },
-
+  { path: '/', icon: faCircleDollarToSlot, label: '' },
+  { path: '/esquela', icon: faCross, label: '' },
 ];
 
 function Navbar() {

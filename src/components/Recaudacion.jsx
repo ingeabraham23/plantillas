@@ -9,7 +9,6 @@ function Recaudacion() {
   const [inputs, setInputs] = useState({
     nombre: "",
     motivo: "",
-    padecimiento: "",
     recaudador: "",
     fecha: "",
     hora: "",
@@ -64,15 +63,6 @@ function Recaudacion() {
         <label>
           <input
             type="text"
-            name="padecimiento"
-            placeholder="Padecimiento:"
-            value={inputs.padecimiento}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          <input
-            type="text"
             name="recaudador"
             placeholder="Recaudador:"
             value={inputs.recaudador}
@@ -105,9 +95,6 @@ function Recaudacion() {
           <tr>
             <th className="encabezado">APOYO VOLUNTARIO</th>
           </tr>
-          <tr>
-            <th className="separador">__________</th>
-          </tr>
         </thead>
         <tbody>
           <tr>
@@ -128,12 +115,6 @@ function Recaudacion() {
             <td className="motivo">{inputs.motivo}</td>
           </tr>
           <tr>
-            <td className="motivo">y</td>
-          </tr>
-          <tr>
-            <td className="motivo">{inputs.padecimiento}</td>
-          </tr>
-          <tr>
             <td className="separador">__________</td>
           </tr>
           <tr>
@@ -143,15 +124,23 @@ function Recaudacion() {
             <td className="al-compañero">{inputs.recaudador}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
-          </tr>
-          <tr>
             <td className="fecha">{inputs.fecha}</td>
           </tr>
           <tr>
             <td className="hora">{inputs.hora}</td>
           </tr>
+          <tr>
+            <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./recaudacion.png" alt="Donar" /></td>
+          </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td className="tips">☝ Todas las donaciones son de forma voluntaria y sin fines de lucro.</td>
+          </tr>
+          <tr>
+            <td className="tips">☝ Es importante recordar que el recaudador está dedicando parte de su tiempo y esfuerzo para llevar a cabo esta noble labor. Así que no te pueden esperar a la vuelta o al otro día. Ponte en su lugar.</td>
+          </tr>
+        </tfoot>
       </table>
       <button className="boton-capturar" onClick={() => capturarTabla(tablaRef.current)}>
         Capturar
