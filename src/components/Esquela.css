@@ -30,82 +30,7 @@
       text-align: center;
     }
   
-    .encabezado {
-      font-family: "ARCO Typography";
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      color: #000000;
-      text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
-      font-size: 24px;
-      padding: 20px;
   
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #fbff00; /* Color del contorno */
-    }
-  
-    .apoya {
-      font-family: "ARCO Typography";
-      color: #a6ff00;
-      text-align: center;
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      font-size: 18px;
-      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
-      padding: 3px;
-  
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #000000; /* Color del contorno */
-    }
-  
-    .al-compañero {
-      font-family: "ARCO Typography";
-      color: #00aeff;
-      text-align: center;
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      font-size: 18px;
-      text-shadow: 1px 1px 1px #00aeff; /* Ajusta el sombreado según sea necesario */
-      padding: 3px;
-  
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #000000; /* Color del contorno */
-    }
-  
-    .lamentable {
-      font-family: "ARCO Typography";
-      color: #ffd000;
-      text-align: center;
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      font-size: 18px;
-      text-shadow: 1px 1px 1px #ffd000; /* Ajusta el sombreado según sea necesario */
-      padding: 3px;
-  
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #000000; /* Color del contorno */
-    }
-  
-    .motivo {
-      font-family: "ARCO Typography";
-      color: #fffb00;
-      text-align: center;
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      font-size: 18px;
-      text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-      padding: 3px;
-  
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #000000; /* Color del contorno */
-    }
-  
-    .fecha {
-      font-family: "ARCO Typography";
-      color: #ff0000;
-      text-align: center;
-      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-      font-size: 18px;
-      text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-      padding: 3px;
-  
-      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-      -webkit-text-stroke-color: #000000; /* Color del contorno */
-    }
   
     .luto {
       font-family: "ARCO Typography";
@@ -160,9 +85,6 @@
       font-size: 20px;
     }
   
-    .tips{
-      font-size: 10px;
-    }
   
   }
   

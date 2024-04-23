@@ -3,12 +3,14 @@ import "./Navbar.css"
 import {
     faCircleDollarToSlot,
     faCross,
+    faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const navigationItems = [
   { path: '/', icon: faCircleDollarToSlot, label: '' },
   { path: '/esquela', icon: faCross, label: '' },
+  { path: '/extravio', icon: faMagnifyingGlass, label: '' },
 ];
 
 function Navbar() {
