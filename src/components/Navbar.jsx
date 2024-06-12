@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import {
+  fa0,
+    faCarBurst,
     faCircleDollarToSlot,
     faCross,
     faMagnifyingGlass,
+    faRoadBarrier,
+    faTriangleExclamation,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,6 +15,10 @@ const navigationItems = [
   { path: '/', icon: faCircleDollarToSlot, label: '' },
   { path: '/esquela', icon: faCross, label: '' },
   { path: '/extravio', icon: faMagnifyingGlass, label: '' },
+  { path: '/viacerrada', icon: faRoadBarrier, label: '' },
+  { path: '/aviso', icon: faTriangleExclamation, label: '' },
+  { path: '/camionetas', icon: fa0, label: '' },
+  { path: '/accidente', icon: faCarBurst, label: '' },
 ];
 
 function Navbar() {
