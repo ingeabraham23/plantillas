@@ -1,14 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useRef} from "react";
-import "./ViaCerrada.css";
+import "./Trailer.css";
 import html2canvas from "html2canvas";
 
-function Accidente() {
+function Trailer() {
   const tablaRef = useRef(null);
 
   const [inputs, setInputs] = useState({
     viaCerrada: "",
     altura:"",
+    alterna1: "",
+    alterna2: "",
   });
 
   const handleChange = (e) => {
@@ -44,7 +46,7 @@ function Accidente() {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;
-      downloadLink.download = `accidente.png`;
+      downloadLink.download = `viacerrada.png`;
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);
@@ -58,7 +60,7 @@ function Accidente() {
           <input
             type="text"
             name="viaCerrada"
-            placeholder="tipo de accidente:"
+            placeholder="Via obstruida:"
             value={inputs.viaCerrada}
             onChange={handleChange}
           />
@@ -72,29 +74,52 @@ function Accidente() {
             onChange={handleChange}
           />
         </label>
-        
+        <label>
+          <input
+            type="text"
+            name="alterna1"
+            placeholder="Via alterna 1:"
+            value={inputs.alterna1}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="alterna2"
+            placeholder="Via alterna 2:"
+            value={inputs.alterna2}
+            onChange={handleChange}
+          />
+        </label>
         <button type="submit">Agregar</button>
       </form>
       <hr></hr>
       <table className="tabla" ref={tablaRef}>
         <thead>
         <tr>
-            <th style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./colision.png" alt="Colision" /></th>
+            <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./trailer.png" alt="trailer" /></td>
           </tr>
           <tr>
-            <th className="encabezado">accidente</th>
+            <th className="encabezado">TRAILER OSBTRUYENDO EL PASO</th>
           </tr>
           <tr>
             <th className="fechayhora">{fechaHoraActual}</th>
           </tr>
           <tr>
-            <th className="separador">___________________________________________</th>
+            <td className="separador">___________________________________________</td>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td className="calle">la calle:</td>
+          </tr>
           <tr></tr>
           <tr>
             <td className="via-cerrada">{inputs.viaCerrada}</td>
+          </tr>
+          <tr>
+            <td className="cerrada">Se encuentra obstruida</td>
           </tr>
           <tr>
             <td className="separador">___________________________________________</td>
@@ -109,14 +134,14 @@ function Accidente() {
           <td className="separador">___________________________________________</td>
           </tr>
           <tr>
-            <td className="calle">Apliquen negativos❗</td>
+            <td className="calle">Usar vias alternas:</td>
           </tr>
           <tr></tr>
           <tr>
-            <td className="alterna1">Actualicen la informacion al pasar por el punto mencionado</td>
+            <td className="alterna1">{inputs.alterna1}</td>
           </tr>
           <tr>
-            <td className="alterna1">Si es posible, tomen foto y compartan</td>
+            <td className="alterna1">{inputs.alterna2}</td>
           </tr>
           <tr>
           <td className="separador">___________________________________________</td>
@@ -127,10 +152,10 @@ function Accidente() {
         </tbody>
         <tfoot>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos si la vialidad esta cerrada o si hay paso.</td>
+            <td className="tips">☝ Favor de informar a los grupos si la vialidad continua cerrada o ya hay paso.</td>
           </tr>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos cual es el estado del accidente.</td>
+            <td className="tips">☝ Favor de informar a los grupos cual es el estado de las vías alternas ya que a veces esta muy complicado transitar por las vías alternas.</td>
           </tr>
         </tfoot>
       </table>
@@ -141,4 +166,4 @@ function Accidente() {
   );
 }
 
-export default Accidente;
+export default Trailer;

@@ -1,0 +1,140 @@
+@media only screen and (max-width: 600px) {
+    @font-face {
+      font-family: "ARCO Typography";
+      src: url("../fonts/ARCO.ttf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    .contenedor {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+    }
+  
+    input {
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .tabla {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    .separador {
+      text-align: center;
+    }
+  
+    .encabezado {
+      font-family: "ARCO Typography";
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      color: #000000;
+      text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
+      font-size: 14px;
+      padding: 20px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #fbff00; /* Color del contorno */
+    }
+    .fechayhora {
+      font-family: "ARCO Typography";
+      color: #cc51eb;
+      text-align: center;
+      letter-spacing: 1px; /* Ajusta el espaciado según sea necesario */
+      font-size: 13px;
+      text-shadow: 1px 1px 1px #cc00ff; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .calle {
+      font-family: "ARCO Typography";
+      color: #a6ff00;
+      text-align: center;
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .via-cerrada {
+      font-family: "ARCO Typography";
+      color: #00ffff;
+      text-align: center;
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      font-size: 20px;
+      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .cerrada {
+      font-family: "ARCO Typography";
+      color: #ff0000;
+      text-align: center;
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .altura {
+      font-family: "ARCO Typography";
+      color: #fffb00;
+      text-align: center;
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .alterna1 {
+      font-family: "ARCO Typography";
+      color: #c300ff;
+      text-align: center;
+      letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+      padding: 3px;
+  
+      -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+      -webkit-text-stroke-color: #000000; /* Color del contorno */
+    }
+  
+    .boton-capturar {
+      background-color: rgb(204, 0, 255); /* Cambia el color de fondo */
+      color: white; /* Cambia el color del texto */
+      padding: 10px; /* Aumenta el espacio alrededor del texto */
+      border: 1px solid #000; /* Elimina el borde */
+      border-radius: 5px; /* Agrega bordes redondeados */
+      cursor: pointer; /* Cambia el cursor al pasar por encima */
+      transition: background-color 0.3s ease; /* Agrega una transición */
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  
+    .tips {
+      font-size: 10px;
+    }
+  }
+  

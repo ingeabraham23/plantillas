@@ -5,11 +5,15 @@ import {
     faCarBurst,
     faCircleDollarToSlot,
     faCross,
+    faDove,
+    faG,
     faMagnifyingGlass,
     faRoadBarrier,
+    faRoadLock,
     faTriangleExclamation,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTruckMoving } from '@fortawesome/free-solid-svg-icons/faTruckMoving';
 
 const navigationItems = [
   { path: '/', icon: faCircleDollarToSlot, label: '' },
@@ -19,6 +23,10 @@ const navigationItems = [
   { path: '/aviso', icon: faTriangleExclamation, label: '' },
   { path: '/camionetas', icon: fa0, label: '' },
   { path: '/accidente', icon: faCarBurst, label: '' },
+  { path: '/trailer', icon: faTruckMoving, label: '' },
+  { path: '/deslave', icon: faRoadLock, label: '' },
+  { path: '/funeral', icon: faDove, label: '' },
+  { path: '/guardia', icon: faG, label: '' },
 ];
 
 function Navbar() {
@@ -28,7 +36,7 @@ function Navbar() {
         {navigationItems.map((item) => (
           <li className="nav-item" key={item.path}>
             <Link to={item.path} className="nav-link">
-              <FontAwesomeIcon icon={item.icon} size="2x" style={{ fontSize: '24px' }}/> {/* Renderiza el icono de Font Awesome */}
+              <FontAwesomeIcon icon={item.icon} size="2x" style={{ fontSize: '30px' }}/> {/* Renderiza el icono de Font Awesome */}
               <span className="nav-label">{item.label}</span> {/* Agrega el span para mostrar la etiqueta */}
             </Link>
           </li>

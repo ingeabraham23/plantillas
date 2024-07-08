@@ -3,7 +3,7 @@ import React, { useState, useRef} from "react";
 import "./ViaCerrada.css";
 import html2canvas from "html2canvas";
 
-function Accidente() {
+function Guardia() {
   const tablaRef = useRef(null);
 
   const [inputs, setInputs] = useState({
@@ -57,9 +57,9 @@ function Accidente() {
         <label>
           <input
             type="text"
-            name="viaCerrada"
-            placeholder="tipo de accidente:"
-            value={inputs.viaCerrada}
+            name="nota"
+            placeholder="nota:"
+            value={inputs.nota}
             onChange={handleChange}
           />
         </label>
@@ -67,7 +67,7 @@ function Accidente() {
           <input
             type="text"
             name="altura"
-            placeholder="A que altura:"
+            placeholder="Ubicacion:"
             value={inputs.altura}
             onChange={handleChange}
           />
@@ -79,10 +79,10 @@ function Accidente() {
       <table className="tabla" ref={tablaRef}>
         <thead>
         <tr>
-            <th style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./colision.png" alt="Colision" /></th>
+            <th style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '80%', height: 'auto' }} src="./guardia.jpg" alt="Guardia Nacional" /></th>
           </tr>
           <tr>
-            <th className="encabezado">accidente</th>
+            <th className="encabezado">guardia nacional</th>
           </tr>
           <tr>
             <th className="fechayhora">{fechaHoraActual}</th>
@@ -94,13 +94,13 @@ function Accidente() {
         <tbody>
           <tr></tr>
           <tr>
-            <td className="via-cerrada">{inputs.viaCerrada}</td>
+            <td className="via-cerrada">{inputs.nota}</td>
           </tr>
           <tr>
             <td className="separador">___________________________________________</td>
           </tr>
           <tr>
-            <td className="calle">A la altura de:</td>
+            <td className="calle">Ubicacion:</td>
           </tr>
           <tr>
             <td className="altura">{inputs.altura}</td>
@@ -127,10 +127,10 @@ function Accidente() {
         </tbody>
         <tfoot>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos si la vialidad esta cerrada o si hay paso.</td>
+            <td className="tips">☝ Favor de informar a los grupos que estan revisando (papeles, pasajeros, estado de la unidad, llantas, etc...), en caso de que los revisen.</td>
           </tr>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos cual es el estado del accidente.</td>
+            <td className="tips">☝ Favor de informar a los grupos cual es el estado del operativo.</td>
           </tr>
         </tfoot>
       </table>
@@ -141,4 +141,4 @@ function Accidente() {
   );
 }
 
-export default Accidente;
+export default Guardia;

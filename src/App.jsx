@@ -9,6 +9,10 @@ import ViaCerrada from './components/ViaCerrada';
 import Aviso from './components/Aviso';
 import Camionetas from './components/Camionetas';
 import Accidente from './components/Accidente';
+import Trailer from './components/Trailer';
+import Deslave from './components/Deslave';
+import Funeral from './components/Funeral';
+import Guardia from './components/Guardia';
 
 function App() {
 
@@ -24,6 +28,10 @@ function App() {
             <Route path="/aviso" element={<Aviso />} />
             <Route path="/camionetas" element={<Camionetas />} />
             <Route path="/accidente" element={<Accidente />} />
+            <Route path="/trailer" element={<Trailer />} />
+            <Route path="/deslave" element={<Deslave />} />
+            <Route path="/funeral" element={<Funeral />} />
+            <Route path="/guardia" element={<Guardia />} />
           </Routes>
         </div>
     </HashRouter>
