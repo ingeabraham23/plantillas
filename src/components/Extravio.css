@@ -26,127 +26,141 @@
     width: 100%;
   }
 
-  .separador {
+  .separador-extravio {
     text-align: center;
   }
 
-  .encabezado {
+  .encabezado-extravio {
     font-family: "ARCO Typography";
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    color: #0077ff;
-    text-shadow: 1px 1px 1px #0077ff; /* Ajusta el sombreado según sea necesario */
-    font-size: 20px;
-    padding: 20px;
+    color: #0099ff;
+    /*text-shadow: 1px 1px 1px #0077ff; /* Ajusta el sombreado según sea necesario */
+    font-size: 30px;
+    padding: 2px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .fecha-extravio {
+    font-family: "ARCO Typography";
+    color: #fffb00;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .objeto {
+  .hora-extravio {
+    font-family: "ARCO Typography";
+    color: #fffb00;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .se-extravio {
+    font-family: "ARCO Typography";
+    color: #ff0000;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .objeto-extravio {
     font-family: "ARCO Typography";
     color: #09ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 16px;
-    text-shadow: 1px 1px 1px #09ff00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
+    font-size: 20px;
+    /*ext-shadow: 1px 1px 1px #09ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .lugar {
+  .lugar-extravio {
     font-family: "ARCO Typography";
     color: #c8ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 16px;
-    text-shadow: 1px 1px 1px #c8ff00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
+    font-size: 20px;
+    /*text-shadow: 1px 1px 1px #c8ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .fecha {
-    font-family: "ARCO Typography";
-    color: #fffb00;
-    text-align: center;
-    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
 
-    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #000000; /* Color del contorno */
-  }
-
-  .hora {
-    font-family: "ARCO Typography";
-    color: #fffb00;
-    text-align: center;
-    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
-
-    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #000000; /* Color del contorno */
-  }
-
-  .abordaje {
+  .abordaje-extravio {
     font-family: "ARCO Typography";
     color: #ff7b00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #ff7b00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
+    font-size: 20px;
+    /*text-shadow: 1px 1px 1px #ff7b00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .telefono {
-    font-family: "ARCO Typography";
-    color: #fffb00;
-    text-align: center;
-    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
-
-    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #000000; /* Color del contorno */
-  }
-
-  .comunicate {
+  .comunicate-extravio {
     font-family: "ARCO Typography";
     color: #a5a5a5;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
+    font-size: 12px;
+    /*text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .extravio {
+  .telefono-extravio {
     font-family: "ARCO Typography";
-    color: #00c3ff;
+    color: #fffb00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .boton-capturar {
+  .entrega-extravio {
+    font-family: "ARCO Typography";
+    color: lightgreen;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 12px;
+    /*text-shadow: 1px 1px 1px #fffb00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .boton-capturar-extravio {
     background-color: rgb(204, 0, 255); /* Cambia el color de fondo */
     color: white; /* Cambia el color del texto */
     padding: 10px; /* Aumenta el espacio alrededor del texto */
@@ -160,7 +174,8 @@
     font-size: 20px;
   }
 
-  .tips {
+  .copyright-extravio {
+    text-align: center;
     font-size: 10px;
   }
 }

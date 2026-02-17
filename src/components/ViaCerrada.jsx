@@ -9,6 +9,7 @@ function ViaCerrada() {
   const [inputs, setInputs] = useState({
     viaCerrada: "",
     altura:"",
+    ciudad: "chignautla pue.",
     alterna1: "",
     alterna2: "",
   });
@@ -42,7 +43,7 @@ function ViaCerrada() {
   const fechaHoraActual = `${diaSemana} ${dia} de ${mes} de ${año}, ${horasFormato12}:${minutos} ${periodo}`;
 
   function capturarTabla(tabla) {
-    html2canvas(tabla).then(function (canvas) {
+    html2canvas(tabla, {scale: 6}).then(function (canvas) {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;
@@ -83,6 +84,16 @@ function ViaCerrada() {
             onChange={handleChange}
           />
         </label>
+
+        <label>
+          <input
+            type="text"
+            name="ciudad"
+            placeholder="Ciudad:"
+            value={inputs.ciudad}
+            onChange={handleChange}
+          />
+        </label>
         <label>
           <input
             type="text"
@@ -98,53 +109,54 @@ function ViaCerrada() {
       <table className="tabla" ref={tablaRef}>
         <thead>
         <tr>
-            <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./viaCerrada.png" alt="ViaCerrada" /></td>
+            <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '30%', height: 'auto' }} src="./viaCerrada.png" alt="ViaCerrada" /></td>
           </tr>
           <tr>
-            <th className="encabezado">VIALIDAD CERRADA</th>
+            <td className="encabezado-cerrada">VIALIDAD CERRADA</td>
           </tr>
           <tr>
-            <th className="fechayhora">{fechaHoraActual}</th>
+            <td className="fechayhora-cerrada">{fechaHoraActual}</td>
           </tr>
           <tr>
-            <td className="separador">___________________________________________</td>
+            <td className="ciudad-cerrada">{inputs.ciudad}</td>
+          </tr>
+          <tr>
+            <td className="separador-cerrada">〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
         </thead>
         <tbody>
+          <tr></tr>
           <tr>
-            <td className="calle">la calle:</td>
+            <td className="calle-cerrada">{inputs.viaCerrada}</td>
+          </tr>
+
+          <tr>
+            <td className="se-encuentra-cerrada">Se encuentra cerrada</td>
+          </tr>
+          <tr>
+            <td className="separador-cerrada">〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
+          </tr>
+          <tr>
+            <td className="a-la-altura-cerrada">A la altura de:</td>
+          </tr>
+          <tr>
+            <td className="altura-cerrada">{inputs.altura}</td>
+          </tr>
+          <tr>
+            <td className="separador-cerrada">〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
+          </tr>
+          <tr>
+            <td className="usar-vias-cerrada">Usar vias alternas:</td>
           </tr>
           <tr></tr>
           <tr>
-            <td className="via-cerrada">{inputs.viaCerrada}</td>
+            <td className="alterna1-cerrada">{inputs.alterna1}</td>
           </tr>
           <tr>
-            <td className="cerrada">Se encuentra cerrada</td>
+            <td className="alterna2-cerrada">{inputs.alterna2}</td>
           </tr>
           <tr>
-            <td className="separador">___________________________________________</td>
-          </tr>
-          <tr>
-            <td className="calle">A la altura de:</td>
-          </tr>
-          <tr>
-            <td className="altura">{inputs.altura}</td>
-          </tr>
-          <tr>
-          <td className="separador">___________________________________________</td>
-          </tr>
-          <tr>
-            <td className="calle">Usar vias alternas:</td>
-          </tr>
-          <tr></tr>
-          <tr>
-            <td className="alterna1">{inputs.alterna1}</td>
-          </tr>
-          <tr>
-            <td className="alterna1">{inputs.alterna2}</td>
-          </tr>
-          <tr>
-          <td className="separador">___________________________________________</td>
+            <td className="separador-cerrada">〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           
           
@@ -152,10 +164,16 @@ function ViaCerrada() {
         </tbody>
         <tfoot>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos si la vialidad continua cerrada o ya hay paso.</td>
+            <td className="tips-cerrada">☝ Favor de informar a los grupos si la vialidad continua cerrada o ya hay paso.</td>
           </tr>
           <tr>
-            <td className="tips">☝ Favor de informar a los grupos cual es el estado de las vías alternas ya que a veces esta muy complicado transitar por las vías alternas.</td>
+            <td className="tips-cerrada">☝ Favor de informar a los grupos cual es el estado de las vías alternas ya que a veces esta muy complicado transitar por las vías alternas.</td>
+          </tr>
+          <tr>
+            <td className="tips-cerrada"></td>
+          </tr>
+          <tr>
+            <td className="copyright-cerrada">@el.joyboy.de.chignautla</td>
           </tr>
         </tfoot>
       </table>

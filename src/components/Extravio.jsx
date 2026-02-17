@@ -4,6 +4,8 @@ import "./Extravio.css";
 import html2canvas from "html2canvas";
 
 function Extravio() {
+  const [imagenUsuario, setImagenUsuario] = useState(null);
+
   const tablaRef = useRef(null);
 
   const [inputs, setInputs] = useState({
@@ -12,7 +14,7 @@ function Extravio() {
     fecha: "",
     hora: "",
     abordaje: "",
-    telefono: "",
+    telefono: "231 258 5892",
   });
 
   const handleChange = (e) => {
@@ -29,7 +31,7 @@ function Extravio() {
   };
 
   function capturarTabla(tabla) {
-    html2canvas(tabla).then(function (canvas) {
+    html2canvas(tabla, {scale: 6}).then(function (canvas) {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;
@@ -97,6 +99,21 @@ function Extravio() {
             onChange={handleChange}
           />
         </label>
+        <label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = (ev) => setImagenUsuario(ev.target.result);
+                reader.readAsDataURL(file);
+              }
+            }}
+          />
+        </label>
+
 
         <button type="submit">Agregar</button>
       </form>
@@ -104,61 +121,102 @@ function Extravio() {
       <table className="tabla" ref={tablaRef}>
         <thead>
           <tr>
-            <th className="encabezado">SERVICIO SOCIAL</th>
+            <td className="encabezado-extravio">SERVICIO SOCIAL</td>
+          </tr>
+          <tr>
+            <td className="encabezado-extravio"></td>
+          </tr>
+          <tr>
+            <td className="encabezado-extravio"></td>
+          </tr>
+          <tr>
+            <td className="encabezado-extravio"></td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="extravio">se extravio</td>
+            <td className="fecha-extravio">{inputs.fecha}</td>
+          </tr>
+          <tr>
+            <td className="hora-extravio">{inputs.hora}</td>
+          </tr>
+          <tr>
+            <td className="separador">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
+          </tr>
+          <tr>
+            <td className="se-extravio">se extravio:</td>
           </tr>
           <tr></tr>
           <tr>
-            <td className="objeto">{inputs.objeto}</td>
+            <td className="objeto-extravio">{inputs.objeto}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
+            <td className="separador-extravio">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           <tr>
-            <td className="lugar">{inputs.lugar}</td>
+            <td className="lugar-extravio">{inputs.lugar}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
+            <td className="separador-extravio">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           <tr>
-            <td className="fecha">{inputs.fecha}</td>
+            <td className="abordaje-extravio">{inputs.abordaje}</td>
           </tr>
           <tr>
-            <td className="hora">{inputs.hora}</td>
+            <td className="separador">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
-          </tr>
-          <tr>
-            <td className="abordaje">{inputs.abordaje}</td>
-          </tr>
-          <tr>
-            <td className="separador">__________</td>
-          </tr>
-          <tr>
-            <td className="comunicate">
+            <td className="comunicate-extravio">
                 Si tienes alguna información comunicate al:
             </td>
           </tr>
           <tr>
-            <td className="al-compañero">{inputs.telefono}</td>
+            <td className="telefono-extravio">{inputs.telefono}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
+            <td className="separador-extravio">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           <tr>
-            <td className="comunicate">
+            <td className="entrega-extravio">
                 Si lo(a) encontraste puedes entregarlo(a) en la base de Urbanos Rojos con el Checador.
             </td>
           </tr>
           <tr>
-            <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '30%', height: 'auto' }} src="./buscando.png" alt="Buscando" /></td>
+            <td className="separador-extravio">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
+          <tr>
+            <td style={{ textAlign: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src="./buscando.png"
+                  alt="Buscando"
+                  style={{ width: "30%", height: "auto" }}
+                />
+
+                {imagenUsuario && (
+                  <img
+                    src={imagenUsuario}
+                    alt="Subida"
+                    style={{ width: "30%", height: "auto" }}
+                  />
+                )}
+              </div>
+            </td>
+          </tr>
+
         </tbody>
+        <tfoot>
+          <tr>
+            <td className="copyright-extravio">@el.joyboy.de.chignautla</td>
+          </tr>
+        </tfoot>
       </table>
       <button className="boton-capturar" onClick={() => capturarTabla(tablaRef.current)}>
         Capturar

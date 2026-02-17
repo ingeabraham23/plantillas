@@ -26,94 +26,135 @@
     width: 100%;
   }
 
-  .separador {
+  .separador-cerrada {
     text-align: center;
   }
 
-  .encabezado {
+  .encabezado-cerrada {
     font-family: "ARCO Typography";
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    color: #000000;
-    text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
+    color: #ff0000;
+    /*text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
     font-size: 24px;
-    padding: 20px;
+    padding: 1px;
+    text-align: center;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #fbff00; /* Color del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
-  .fechayhora {
+
+  .ciudad-cerrada {
     font-family: "ARCO Typography";
-    color: #cc51eb;
+    color: lightblue;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
     font-size: 18px;
-    text-shadow: 1px 1px 1px #cc00ff; /* Ajusta el sombreado según sea necesario */
+    /*text-shadow: 1px 1px 1px #cc00ff; /* Ajusta el sombreado según sea necesario */
+    padding: 3px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+  
+  .fechayhora-cerrada {
+    font-family: "ARCO Typography";
+    color: lightcoral;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #cc00ff; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .calle {
+  .calle-cerrada {
     font-family: "ARCO Typography";
     color: #a6ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
     font-size: 18px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .via-cerrada {
-    font-family: "ARCO Typography";
-    color: #00ffff;
-    text-align: center;
-    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 30px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
-    padding: 3px;
-
-    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #000000; /* Color del contorno */
-  }
-
-  .cerrada {
+  .se-encuentra-cerrada {
     font-family: "ARCO Typography";
     color: #ff0000;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 22px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .altura {
+ .a-la-altura-cerrada {
+    font-family: "ARCO Typography";
+    color: #0099ff;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 16px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .altura-cerrada {
     font-family: "ARCO Typography";
     color: #fffb00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 22px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .alterna1 {
+  .usar-vias-cerrada {
     font-family: "ARCO Typography";
-    color: #c300ff;
+    color: #48ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 22px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .alterna1-cerrada {
+    font-family: "ARCO Typography";
+    color: cornflowerblue;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
+
+    -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .alterna2-cerrada {
+    font-family: "ARCO Typography";
+    color: #f58aff;
+    text-align: center;
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 1px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
@@ -133,7 +174,14 @@
     font-size: 20px;
   }
 
-  .tips {
-    font-size: 10px;
+  .tips-cerrada {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .copyright-cerrada {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
   }
 }
