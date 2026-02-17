@@ -8,6 +8,7 @@ function Recaudacion() {
 
   const [inputs, setInputs] = useState({
     nombre: "",
+    numero: "",
     motivo: "",
     recaudador: "",
     fecha: "",
@@ -28,7 +29,7 @@ function Recaudacion() {
   };
 
   function capturarTabla(tabla) {
-    html2canvas(tabla).then(function (canvas) {
+    html2canvas(tabla, { scale: 6 }).then(function (canvas) {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;
@@ -48,6 +49,15 @@ function Recaudacion() {
             name="nombre"
             placeholder="Nombre de la persona que se apoyará:"
             value={inputs.nombre}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="numero"
+            placeholder="Numero de la unidad que maneja"
+            value={inputs.numero}
             onChange={handleChange}
           />
         </label>
@@ -93,7 +103,7 @@ function Recaudacion() {
       <table className="tabla" ref={tablaRef}>
         <thead>
           <tr>
-            <th className="encabezado">APOYO VOLUNTARIO</th>
+            <th className="encabezado-recaudacion">❤ APOYO VOLUNTARIO ❤</th>
           </tr>
         </thead>
         <tbody>
@@ -105,20 +115,24 @@ function Recaudacion() {
             <td className="al-compañero">{inputs.nombre}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
+            <td className="apoya">Operador de la la unidad número: </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td className="al-compañero">{inputs.numero}</td>
           </tr>
           <tr>
-            <td className="lamentable">Ya que lamentablemente</td>
+            <td className="lamentablemente-recaudacion">Ya que lamentablemente:</td>
           </tr>
           <tr></tr>
           <tr>
             <td className="motivo">{inputs.motivo}</td>
           </tr>
           <tr>
-            <td className="separador">__________</td>
+            <td className="separador">〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰</td>
           </tr>
           <tr>
-            <td className="apoya">La recaudación la realizara el compañero</td>
+            <td className="apoya">La recaudación la realizara el compañero:</td>
           </tr>
           <tr>
             <td className="al-compañero">{inputs.recaudador}</td>
@@ -129,16 +143,30 @@ function Recaudacion() {
           <tr>
             <td className="hora">{inputs.hora}</td>
           </tr>
-          <tr>
+          {/* <tr>
             <td style={{ width: '100px', textAlign: 'center' }} ><img style={{ width: '50%', height: 'auto' }} src="./recaudacion.png" alt="Donar" /></td>
+          </tr> */}
+          <tr>
+            <td className="tips-encabezado">TERMINOS Y CONDICIONES:</td>
+          </tr>
+          <tr>
+            <td className="tips-recaudacion">☝ Estas recaudaciones no son obligatorias ni representan una prestación laboral, sino un acto voluntario de apoyo entre compañeros.</td>
+          </tr>
+          <tr>
+            <td className="tips-recaudacion">☝ La recaudación solo aplica cuando el compañero tenga un familiar directo (padres, hijos, cónyuge o hermanos) que se encuentre hospitalizado, o haya fallecido.</td>
+          </tr>
+
+          <tr>
+            <td className="tips-recaudacion">☝ No aplica para los compañeros o familiares que cuenten con seguro social IMSS, ya que estos casos tienen respaldo institucional.</td>
+          </tr>
+
+          <tr>
+            <td className="tips-recaudacion">☝ El compañero que solicite el apoyo debe haber participado activamente en recaudaciones anteriores, ya sea como aportador o colaborador, demostrando solidaridad con el grupo.</td>
           </tr>
         </tbody>
-        <tfoot>
+        <tfoot><br></br>
           <tr>
-            <td className="tips">☝ Todas las donaciones son de forma voluntaria y sin fines de lucro.</td>
-          </tr>
-          <tr>
-            <td className="tips">☝ Es importante recordar que el recaudador está dedicando parte de su tiempo y esfuerzo para llevar a cabo esta noble labor. Así que no te pueden esperar a la vuelta o al otro día. Ponte en su lugar.</td>
+            <td className="copyright-recaudacion">@el joyboy de chignautla</td>
           </tr>
         </tfoot>
       </table>

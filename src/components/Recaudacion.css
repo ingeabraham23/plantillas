@@ -30,16 +30,17 @@
     text-align: center;
   }
 
-  .encabezado {
+  .encabezado-recaudacion {
     font-family: "ARCO Typography";
+    color: #ff0000;
+    text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    color: #000000;
-    text-shadow: 1px 1px 1px #a200ff; /* Ajusta el sombreado según sea necesario */
-    font-size: 24px;
-    padding: 20px;
+    font-size: 18px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #fbff00; /* Color del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
   .apoya {
@@ -47,8 +48,8 @@
     color: #a6ff00;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 18px;
-    text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
+    font-size: 14px;
+    /*text-shadow: 1px 1px 1px #a6ff00; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
@@ -60,20 +61,20 @@
     color: #00aeff;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 18px;
-    text-shadow: 1px 1px 1px #00aeff; /* Ajusta el sombreado según sea necesario */
+    font-size: 30px;
+    /*text-shadow: 1px 1px 1px #00aeff; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
     -webkit-text-stroke-width: 1px; /* Grosor del contorno */
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
-  .lamentable {
+  .lamentablemente-recaudacion {
     font-family: "ARCO Typography";
-    color: #ffd000;
+    color: #c900fc;
     text-align: center;
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    font-size: 18px;
+    font-size: 14px;
     text-shadow: 1px 1px 1px #ffd000; /* Ajusta el sombreado según sea necesario */
     padding: 3px;
 
@@ -134,8 +135,17 @@
     font-size: 20px;
   }
 
-  .tips{
-    font-size: 10px;
+  .tips-recaudacion{
+    font-size: 12px;
+  }
+
+  .tips-encabezado{
+    font-size: 14px;
+  }
+
+  .copyright-recaudacion{
+    font-size: 14px;
+    text-align: center;
   }
 
 }

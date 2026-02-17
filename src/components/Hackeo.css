@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "ARCO Typography";
+  src: url("../fonts/ARCO.ttf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.encabezado-hackeo {
+  font-family: "ARCO Typography";
+  background: #b30000;
+  color: white;
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  font-size: 26px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.elwhatsapp-hackeo {
+  font-family: "ARCO Typography";
+  color: rgb(30, 255, 0);
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  text-align: center;
+  font-size: 14px;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.nombre-hackeo {
+  font-family: "ARCO Typography";
+  color: rgb(0, 183, 255);
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  text-align: center;
+  font-size: 32px;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.numero-hackeo-titulo {
+  font-family: "ARCO Typography";
+  color: rgb(30, 255, 0);
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  text-align: center;
+  font-size: 14px;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.numero-hackeo {
+  font-family: "ARCO Typography";
+  color: rgb(0, 183, 255);
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  text-align: center;
+  font-size: 32px;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.consejo-hackeo {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 18px;
+}
+
+.recomendacion-titulo-hackeo {
+  font-family: "ARCO Typography";
+  color: rgb(30, 255, 0);
+  letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+  text-align: center;
+  font-size: 14px;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+}
+
+.recomendacion-hackeo {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 18px;
+}
+
+.copyright-hackeo{
+    font-size: 14px;
+    text-align: center;
+  }
+

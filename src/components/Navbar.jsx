@@ -11,6 +11,7 @@ import {
     faRoadBarrier,
     faRoadLock,
     faTriangleExclamation,
+    faBookSkull,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruckMoving } from '@fortawesome/free-solid-svg-icons/faTruckMoving';
@@ -27,6 +28,7 @@ const navigationItems = [
   { path: '/deslave', icon: faRoadLock, label: '' },
   { path: '/funeral', icon: faDove, label: '' },
   { path: '/guardia', icon: faG, label: '' },
+  { path: '/hackeo', icon: faBookSkull, label: '' },
 ];
 
 function Navbar() {

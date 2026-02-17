@@ -13,6 +13,7 @@ import Trailer from './components/Trailer';
 import Deslave from './components/Deslave';
 import Funeral from './components/Funeral';
 import Guardia from './components/Guardia';
+import Hackeo from './components/Hackeo';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/deslave" element={<Deslave />} />
             <Route path="/funeral" element={<Funeral />} />
             <Route path="/guardia" element={<Guardia />} />
+          <Route path="/hackeo" element={<Hackeo />} />
           </Routes>
         </div>
     </HashRouter>
